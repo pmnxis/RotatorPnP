@@ -43,7 +43,7 @@ def runner(__in, __rule, __out):
     rule_book = list(csv.reader(ruf))
     # Fix here if your csv file's rotation value is not in 6th col.
     # I will fix this later. But not now. I don't need auto detector for now.
-    dog = re.compile('^([^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*)(\d{1,3})(.*$)')
+    dog = re.compile('^([^,]*,[^,]*,[^,]*,[^,]*,[^,]*,)(\d+)(.*$)')
     for line in data:
         line_cnt += 1
         new_line = line
