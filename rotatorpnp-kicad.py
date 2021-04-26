@@ -36,7 +36,6 @@ def runner(__in, __rule, __out):
         new_line = line
         for part_name in rule_book:
             if(line.find(part_name[0]) != -1):
-                print('a')
                 cnt += 1
                 pig = dog.search(line)
                 print('Rule book Detected !! - ', cnt,' Counted :: ', end='')
