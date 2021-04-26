@@ -1,0 +1,3 @@
+[submodule "kicad-jlcpcb-bom-plugin"]
+	path = kicad-jlcpcb-bom-plugin
+	url = https://github.com/wokwi/kicad-jlcpcb-bom-plugin

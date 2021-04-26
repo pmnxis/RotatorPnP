@@ -6,6 +6,8 @@ RotatorPnP
 
 This script rotate your parts by following your custom rule book.
 
+For now it's only maintained for kicad5 pos file.
+Also this convert to JLCPCB format automatically when use kicad version.
 
 About rulebook
 ------------------
@@ -35,7 +37,26 @@ R/L/C was fine. But transistor , diode or ICs had issue about rotation value.
 
 You may need to check how many value need to roate yourself. But it would be helpful than fix everyting by your hand and excel everytime.
 
-Execution
+
+Execution - Kicad
+------------------
+```shell
+python3 ./rotatorpnp-kicad.py --default ./Sample_Kicad.csv
+```
+
+#### CommandLine Form
+```
+Rotator-Kicad :: Please follow commands.
+
+Example - Quick (--default)
+--default ./LambdaCoin-pos.csv
+this will export result to ./LambdaCoin-pos-renew.csv that renew postfix.
+
+Example - Manual
+./input.csv ./ruleBook.csv ./output.csv
+```
+
+Execution - Previous Version (Orcad or altium)
 ------------------
 
 Currently I didn't implemented about argument parsing. Need to fix "main()" yourself.
